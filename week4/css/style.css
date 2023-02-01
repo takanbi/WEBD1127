@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+div#container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #B3AC34;
+}
+
+div#container svg#mySVG #circle {
+  -webkit-transform: scale(75%);
+          transform: scale(75%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  fill: none;
+  stroke: #b22240;
+  stroke-width: 3px;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-animation: 4s circleAnimate forwards;
+          animation: 4s circleAnimate forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+div#container svg#mySVG .letters {
+  fill: none;
+  stroke: #b22240;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+  -webkit-transform: scale(50%);
+          transform: scale(50%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke-linejoin: round;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  -webkit-animation: 8s letterAnimate forwards;
+          animation: 8s letterAnimate forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@-webkit-keyframes circleAnimate {
+  form {
+    stroke-dashoffset: 650;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes circleAnimate {
+  form {
+    stroke-dashoffset: 650;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes letterAnimate {
+  form {
+    stroke-dashoffset: 400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes letterAnimate {
+  form {
+    stroke-dashoffset: 400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
