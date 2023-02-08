@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+$vivaMagentaFull: #be3455;
+$vivaMagentaLight: #ca7387;
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    180deg,
+    $vivaMagentaFull,
+    $vivaMagentaLight
+  );
+  svg#mySVG {
+      height: 100%;
+    #circle {
+      transform: scale(75%);
+      transform-origin: (50% 50%);
+      fill: none;
+      stroke: #34bf49;
+      stroke-width: 3px;
+      // stroke-dasharray: 650;
+      // stroke-dashoffset: 650;
+      // animation: 4s circleAnimate forwards;
+      // animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      // animation-delay: 2s;
+    }
+    .letters {
+      fill: none;
+      stroke: #34bf49;
+      stroke-miterlimit: 10;
+      stroke-width: 3px;
+      transform: scale(50%);
+      transform-origin: (50% 50%);
+      stroke-linejoin: round;
+      // stroke-dasharray: 400;
+      // stroke-dashoffset: 400;
+      // animation: 8s letterAnimate forwards;
+      // animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+  }
+  svg#spirograph {
+      height: 100%;
+            .cls-1 {
+        fill: #f9ed32;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22 {
+        mix-blend-mode: multiply;
+        opacity: .25;
+      }
+
+      .cls-2 {
+        fill: #fbb040;
+      }
+
+      .cls-3 {
+        fill: #ef4136;
+      }
+
+      .cls-4 {
+        fill: #ee2a7b;
+      }
+
+      .cls-5 {
+        fill: #f15a29;
+      }
+
+      .cls-6 {
+        fill: #f7941d;
+      }
+
+      .cls-7 {
+        fill: #8dc63f;
+      }
+
+      .cls-8 {
+        fill: #92278f;
+      }
+
+      .cls-9 {
+        fill: #9e1f63;
+      }
+
+      .cls-10 {
+        fill: #662d91;
+      }
+
+      .cls-11 {
+        fill: #be1e2d;
+      }
+
+      .cls-12 {
+        fill: #00a79d;
+      }
+
+      .cls-13 {
+        fill: #009444;
+      }
+
+      .cls-14 {
+        fill: #006838;
+      }
+
+      .cls-15 {
+        fill: #39b54a;
+      }
+
+      .cls-16 {
+        fill: #2b3990;
+      }
+
+      .cls-17 {
+        fill: #27aae1;
+      }
+
+      .cls-18 {
+        fill: #2bb673;
+      }
+
+      .cls-19 {
+        fill: #1c75bc;
+      }
+
+      .cls-20 {
+        fill: #262262;
+      }
+
+      .cls-21 {
+        fill: #d7df23;
+      }
+
+      .cls-22 {
+        fill: #da1c5c;
+      }
+
+      .cls-23 {
+        isolation: isolate;
+      }
+  }
+}
