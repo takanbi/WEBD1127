@@ -59,6 +59,9 @@
         font-family: pirulen;
         font-size: 3em;
         letter-spacing: 0.5em;
+        span {
+            display: inline-block;
+        }
     }
 }
 .loading {

@@ -95,18 +95,16 @@
         let body = document.querySelector("body");
         let content = document.querySelector(".content");
         let loading = document.querySelector(".loading");
-        let title = document.querySelectorAll(".content > h1");
-        // let title1 = document.querySelectorAll(".content > h1 > span");
+        let titleSpans = document.querySelectorAll(".content > h1 > span");
   
         function preloader() {
             let tl = gsap.timeline(); 
             tl.fromTo(loading, {opacity: 0 }, {opacity: 1, duration: 2});
-            tl.fromTo(content, {opacity: 0},{opacity: 1, duration: 3}, "+=1");
-            // tl.from(title1, {y: 100, duration: 3, stagger: 0.1})
-            tl.from(title, {y: 100, opacity: 0, duration: 0.25,}, "+=2")
+            tl.fromTo(content, {opacity: 0},{opacity: 1, duration: 2},"+=2");
+            tl.from(titleSpans, {y: -100, x: 50, opacity: 0,duration: 0.5, stagger: 0.3, ease: "bounce.out"})
         }
         preloader();
-        console.log(title);
+        console.log(titleSpans.length);
     </script> 
 </body>
 </html>
