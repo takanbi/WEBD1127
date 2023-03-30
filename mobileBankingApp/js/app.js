@@ -6,11 +6,12 @@ $(function () {
   let welcomeTop = $("#welcome-top-content");
   let welcomeMiddle = $("#welcome-middle-content");
   let welcomeBottom = $("#welcome-bottom-content");
+
   login.css("visibility", "visible");
   welcomeMain.css("visibility", "hidden");
 
-  let welcomeMidChildren = welcomeMiddle.children();
-  console.log(welcomeMidChildren);
+  // let welcomeMidChildren = welcomeMiddle.children();
+  // console.log(welcomeMidChildren);
   submit.click(loadWelcome);
 
   function loadWelcome() {
