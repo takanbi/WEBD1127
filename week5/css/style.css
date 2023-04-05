@@ -2,24 +2,16 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
 #container {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#be3455), to(#ca7387));
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(180deg, #be3455, #ca7387);
 }
 
@@ -28,10 +20,8 @@
 }
 
 #container svg#mySVG #circle {
-  -webkit-transform: scale(75%);
-          transform: scale(75%);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform: scale(75%);
+  transform-origin: 50% 50%;
   fill: none;
   stroke: #34bf49;
   stroke-width: 3px;
@@ -42,10 +32,8 @@
   stroke: #34bf49;
   stroke-miterlimit: 10;
   stroke-width: 3px;
-  -webkit-transform: scale(50%);
-          transform: scale(50%);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform: scale(50%);
+  transform-origin: 50% 50%;
   stroke-linejoin: round;
 }
 
@@ -149,4 +137,3 @@
 #container svg#spirograph .cls-23 {
   isolation: isolate;
 }
-/*# sourceMappingURL=style.css.map */

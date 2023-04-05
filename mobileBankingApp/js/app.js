@@ -22,4 +22,8 @@ $(function () {
     tl.from(welcomeTop,{opacity: 0, y: -200, duration: 0.8, ease: "elastic.out(1, 0.75)"},"+=0.5");
     tl.from(welcomeMiddle,{opacity: 0, y: 200, duration: 0.8, ease: "elastic.out(1, 0.75)"});
   }
+  $("#checking").click(loadChecking);
+  function loadChecking() {
+    welcomeTop.css("visibility", "hidden");
+  }
 });
