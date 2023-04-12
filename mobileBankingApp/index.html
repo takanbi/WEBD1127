@@ -7,7 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unity Mobile Banking App</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="../">
+    <link rel="icon" type="image/x-icon" href="images/bankLogo.png">
+    <style>
+        div#full-gradient-background {
+            /* visibility: hidden; */
+        }
+
+        #login {
+            /* visibility: hidden; */
+        }
+
+        #welcome-main-content {
+            /* visibility: hidden; */
+        }
+
+        #checking-main-content {
+            /* visibility: hidden; */
+        }
+    </style>
 </head>
 <!-- 
     TO DO!!!
@@ -22,6 +39,7 @@
    9. add reloadWelcome function with similar gsap animation to loadwelcome, uses redChevron's submit event
    10. Add logo as SVG, copy code from other version and add animation
 -->
+
 <body>
     <div class="container">
         <!-- remove comments and add more css after completeing the restof the project -->
@@ -73,7 +91,6 @@
                         <img src="images/target.png" alt="target logo">
                         <img src="images/walmart.png" alt="walmart logo">
                         <img src="images/starbucks.png" alt="starbucks logo">
-                        <!-- <img src="images/starbucks-logo.svg" alt="starbucks logo"> -->
                     </div>
                 </div>
             </div>
@@ -99,6 +116,115 @@
             </div>
         </section>
         <!-- welcome content ends here -->
+
+        <!-- ckecking content starts here -->
+        <div id="checking-main-content">
+            <div id="checking-1">
+                <h3>Checking...1329</h3>
+                <p>$2,694.88</p>
+                <p>Available Balance</p>
+                <img id="exclamation" src="images/exclamation.svg" alt="exclamation">
+                <img id="left" src="images/red_left-chevron.svg" alt="left arrow">
+            </div>
+            <div id="checking-data">
+                <div class="checking-data-divs">
+                    <div>
+                        <img src="images/clock.svg" alt="clock icon" class="clock">
+                    </div>
+                    <div>
+                        <div>
+                            <span>Pending</span><span>$14.99</span>
+                        </div>
+                        <div>
+                            <h3>PURCHASE St Paul</h3>
+                            <h3>CARD1329</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="checking-data-divs">
+                    <div>
+                        <img src="images/clock.svg" alt="clock icon" class="clock">
+                    </div>
+                    <div>
+                        <div>
+                            <span>Pending</span><span>$28.99</span>
+                        </div>
+                        <div>
+                            <h3>PURCHASE APPLE.COM</h3>
+                            <h3>CARD1329</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="checking-data-divs">
+                    <div>
+                        <img src="images/clock.svg" alt="clock icon" class="clock">
+                    </div>
+                    <div>
+                        <div>
+                            <span>Pending</span><span>$64.59</span>
+                        </div>
+                        <div>
+                            <h3>PURCHASE AMAZON</h3>
+                            <h3>CARD1329</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="checking-data-divs">
+                    <div>
+                        <img src="images/clock.svg" alt="clock icon" class="clock">
+                    </div>
+                    <div>
+                        <div>
+                            <span>02/17/22</span><span>$154.99</span>
+                        </div>
+                        <div>
+                            <h3>PURCHASE TARGET MN</h3>
+                            <h3>CARD1329</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="checking-data-divs">
+                    <div>
+                        <img src="images/clock.svg" alt="clock icon" class="clock">
+                    </div>
+                    <div>
+                        <div>
+                            <span>02/13/22</span><span>$154.99</span>
+                        </div>
+                        <div>
+                            <h3>PURCHASE Car Wash</h3>
+                            <h3>CARD1329</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="checking-data-divs">
+                    <p id="checking-data-divs-6-p">
+                        Show more transactions
+                    </p>
+                </div>
+            </div>
+            <div id="checking-bottom-content">
+                <div>
+                    <div>
+                        <img src="images/test/SVG/accounts.svg" alt="accounts">
+                        <span>accounts</span>
+                    </div>
+                    <div>
+                        <img src="images/test/SVG/deposit.svg" alt="deposit">
+                        <span>deposit</span>
+                    </div>
+                    <div>
+                        <img src="images/test/SVG/payments.svg" alt="payments">
+                        <span>payments</span>
+                    </div>
+                    <div>
+                        <img src="images/test/SVG/menu.svg" alt="menu">
+                        <span>menu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- checking content ends here -->
 
         <!-- background content starts here -->
         <div id="template"></div>
